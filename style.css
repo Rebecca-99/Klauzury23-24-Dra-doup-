@@ -1,0 +1,173 @@
+body{
+    margin: 0px;
+    padding: 0px;
+   height: 300vh;
+    
+    
+}
+#container{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: url(fotky/fotka1.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#border{
+        background-color: rgba(255, 255, 255, 0.7);
+            align-items: center;
+            text-align: center;
+            border-top-left-radius: 190px;
+            border-bottom-left-radius: 70px;
+            border-top-right-radius: 70px;
+            border-bottom-right-radius: 190px;
+            margin-bottom: 35px;
+            padding: 50px;
+            position: relative;
+            font-family: "MedievalSharp", cursive;
+            font-weight: 400;
+            font-style: normal;
+       
+}
+#menu{
+    position: fixed;
+    top:0px;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    
+}
+
+#container2{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 100vh;
+    background-image: url(fotky/pozad%C3%AD1.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+    .photo {
+    width: 100%;
+    margin-bottom: 18vh;
+    padding-top: 22vh;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper>div {
+  height: 80vh;
+  width: 900px;
+   
+   
+}
+.slide-text{
+    color: floralwhite;
+    width: 20%;
+    height: 50vh;
+    margin-left: 50px;
+    margin-top: 60px;
+    
+}
+
+.firstswiper img{
+    height: 80vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.firstswiper{
+    align-items: center;
+    justify-content: center;
+}
+
+#container3{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    margin-top: 250vh;
+    background-image: url(fotky/pozad%C3%AD%202.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 333;
+  
+  
+    
+}
+   }
+
+        .gallery {
+            margin-left: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+        }
+
+        .gallery img {
+            width: 200px;
+            transition: transform 0.2s;
+            margin: 5px;
+         
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                display: none;
+            z-index: 999;
+            
+        }
+
+        .lightbox img {
+            max-width: 50%;
+            max-height: 60%;
+            margin-left: 25%;
+            z-index: 999;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+.gallery_slide{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   
+}

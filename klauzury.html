@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <meta charset="UTF-8">
+    <title>Klauzury jeeeee</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <div id="menu"></div>
+    <div id="container">
+
+
+        <div id="border">
+            <h1>Klauzury-2024</h1>
+        </div>
+    </div>
+
+    <div id="container2">
+        <div class="photo">
+            <div class="slide-text" id="menici2">
+                <h1> Dračí Doupě</h1>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide slide_1 firstswiper"><img src="fotky/fotka2.png"></div>
+                    <div class="swiper-slide slide_2 firstswiper"><img src="fotky/fotka3.png"></div>
+                    <div class="swiper-slide slide_3 firstswiper"><img src="fotky/fotka4.png"></div>
+                    <div class="swiper-slide slide_4 firstswiper"><img src="fotky/fotka5.png"></div>
+                    <div class="swiper-slide slide_5 firstswiper"><img src="fotky/fotka6.png"></div>
+                    <div class="swiper-slide slide_6 firstswiper"><img src="fotky/fotka7.png"></div>
+                    <div class="swiper-slide slide_7 firstswiper"><img src="fotky/fotka8.png"></div>
+                    <div class="swiper-slide slide_8 firstswiper"><img src="fotky/fotka9.png"></div>
+                    <div class="swiper-slide slide_9 firstswiper"><img src="fotky/fotka10.png"></div>
+                    <div class="swiper-slide slide_10 firstswiper"><img src="fotky/fotka11.png"></div>
+                    <div class="swiper-slide slide_11 firstswiper"><img src="fotky/fotka12.png"></div>
+                    <div class="swiper-slide slide_12 firstswiper"><img src="fotky/fotka13.png"></div>
+                    <div class="swiper-slide slide_13 firstswiper"><img src="fotky/fotka14.png"></div>
+                    <div class="swiper-slide slide_14 firstswiper"><img src="fotky/fotka15.png"></div>
+                    <div class="swiper-slide slide_15 firstswiper"><img src="fotky/fotka16.png"></div>
+                    <div class="swiper-slide slide_16 firstswiper"><img src="fotky/fotka17.png"></div>
+                    <div class="swiper-slide slide_17 firstswiper"><img src="fotky/fotka21.png"></div>
+                    <div class="swiper-slide slide_18 firstswiper"><img src="fotky/fotka19.png"></div>
+                    <div class="swiper-slide slide_19 firstswiper"><img src="fotky/fotka20.png"></div>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="slide_text_0" style="display:none;">
+            <h1>Dračí doupě</h1>
+        </div>
+        <div id="slide_text_1" style="display:none;">Text for Slide 2</div>
+        <div id="slide_text_2" style="display:none;">Text for Slide 3</div>
+        <div id="slide_text_3" style="display:none;">Text for Slide 4</div>
+        <div id="slide_text_6" style="display:none;">Text for Slide 5</div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            function see(param_div_id) {
+                document.getElementById('menici2').innerHTML = document.getElementById(param_div_id).innerHTML;
+            }
+            // Initialize Swiper
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 10000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                on: {
+                    slideChange: function() {
+                        var slideIndex = this.activeIndex;
+                        var textId = 'slide_text_' + slideIndex;
+                        see(textId);
+                    }
+                }
+            });
+        </script>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        var isFixed = false; // Přidáme proměnnou pro sledování stavu
+        var lastScrollTop = 0;
+        var scrollThreshold = window.innerHeight; // Počet pixelů odpovídající 100vh
+
+        $(window).scroll(function() {
+            var image = $('#container2');
+            var scrollTop = $(this).scrollTop();
+
+            console.log('Scroll top:', scrollTop); // Logování scrollTop
+
+            if (scrollTop >= scrollThreshold && !isFixed) { // Uživatel scroluje dolů, prvek není ve stavu fixed a je po scrollThreshold
+                image.css('position', 'fixed');
+                image.css('top', '0');
+                console.log('Position fixed');
+                isFixed = true; // Nastavíme proměnnou isFixed na true, aby se předešlo opakovaným změnám
+            } else if (scrollTop < scrollThreshold && isFixed) { // Uživatel scroluje nahoru, prvek je ve stavu fixed a je před scrollThreshold
+                image.css('position', 'absolute');
+                image.css('top', '100vh'); // Nastavíme pozici na konci viewportu
+                console.log('Position absolute');
+                isFixed = false; // Nastavíme proměnnou isFixed na false, protože jsme změnili pozici z fixed na absolute
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    </script>
+
+    <div id="container3">
+        <div class="gallery">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide gallery_slide">
+                        <a href="#img1"><img src="fotky/fotka1.png" data-text="Text for Image 1"></a>
+                        <a href="#img2"><img src="fotky/fotka2.png" data-text="Text for Image 2"></a>
+                        <a href="#img3"><img src="fotky/fotka3.png" data-text="Text for Image 3"></a>
+                        <a href="#img4"><img src="fotky/fotka4.png" data-text="Text for Image 4"></a>
+                        <a href="#img5"><img src="fotky/fotka21.png" data-text="Text for Image 5"></a>
+                        <a href="#img6"><img src="fotky/fotka6.png" data-text="Text for Image 6"></a>
+                        <a href="#img7"><img src="fotky/fotka7.png" data-text="Text for Image 7"></a>
+                        <a href="#img8"><img src="fotky/fotka8.png" data-text="Text for Image 8"></a>
+                        <a href="#img9"><img src="fotky/fotka9.png" data-text="Text for Image 9"></a>
+                        <a href="#img10"><img src="fotky/fotka10.png" data-text="Text for Image 10"></a>
+                        <a href="#img11"><img src="fotky/fotka20.png" data-text="Text for Image 11"></a>
+                        <a href="#img12"><img src="fotky/fotka12.png" data-text="Text for Image 12"></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="lightbox" id="img1">
+            <a href="#"><img src="fotky/fotka1.png"></a>
+        </div>
+        <div class="lightbox" id="img2">
+            <a href="#"><img src="fotky/fotka2.png"></a>
+        </div>
+        <div class="lightbox" id="img3">
+            <a href="#"><img src="fotky/fotka3.png"></a>
+        </div>
+        <div class="lightbox" id="img4">
+            <a href="#"><img src="fotky/fotka4.png"></a>
+        </div>
+        <div class="lightbox" id="img5">
+            <a href="#"><img src="fotky/fotka2.png"></a>
+        </div>
+        <div class="lightbox" id="img6">
+            <a href="#"><img src="fotky/fotka6.png"></a>
+        </div>
+        <div class="lightbox" id="img7">
+            <a href="#"><img src="fotky/fotka7.png"></a>
+        </div>
+        <div class="lightbox" id="img8">
+            <a href="#"><img src="fotky/fotka8.png"></a>
+        </div>
+        <div class="lightbox" id="img9">
+            <a href="#"><img src="fotky/fotka9.png"></a>
+        </div>
+        <div class="lightbox" id="img10">
+            <a href="#"><img src="fotky/fotka10.png"></a>
+        </div>
+        <div class="lightbox" id="img11">
+            <a href="#"><img src="fotky/fotka20.png"></a>
+        </div>
+        <div class="lightbox" id="img12">
+            <a href="#"><img src="fotky/fotka12.png"></a>
+        </div>
+        <div class="lightbox" id="img13">
+            <a href="#"><img src="fotky/fotka13.png"></a>
+        </div>
+        <div class="lightbox" id="img14">
+            <a href="#"><img src="fotky/fotka14.png"></a>
+        </div>
+        <div class="lightbox" id="img15">
+            <a href="#"><img src="fotky/fotka15.png"></a>
+        </div>
+        <div class="lightbox" id="img16">
+            <a href="#"><img src="fotky/fotka16.png"></a>
+        </div>
+        <div class="lightbox" id="img17">
+            <a href="#"><img src="fotky/fotka17.png"></a>
+        </div>
+        <div class="lightbox" id="img19">
+            <a href="#"><img src="fotky/fotka19.png"></a>
+        </div>
+        <div class="lightbox" id="img20">
+            <a href="#"><img src="fotky/fotka11.png"></a>
+        </div>
+        <div class="lightbox" id="img21">
+            <a href="#"><img src="fotky/fotka5.png"></a>
+        </div>
+
+        <!-- Přidejte další lightbox divy podle potřeby -->
+
+        <script>
+            document.addEventListener('click', function(event) {
+                if (event.target.matches('.lightbox img') || event.target.matches('.lightbox .close')) {
+                    event.preventDefault();
+                    window.location.hash = '';
+                }
+            }, false);
+        </script>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        var isFixed = false;
+        var lastScrollTop = 0;
+        var scrollThreshold = window.innerHeight;
+
+        $(window).scroll(function() {
+            var image = $('#container3');
+            var imageTop = image[0].getBoundingClientRect().top;
+            var scrollTop = $(this).scrollTop();
+
+            console.log('Scroll top:', scrollTop);
+            if (scrollTop > lastScrollTop && !isFixed && scrollTop >= scrollThreshold) {
+                scrollThreshold
+                image.css('position', 'fixed');
+                image.css('top', '0');
+                console.log('Position fixed');
+                isFixed = true;
+            } else if (scrollTop < lastScrollTop && isFixed) {
+                image.css('position', 'absolute');
+                image.css('top', '100vh');
+                console.log('Position absolute');
+                isFixed = false;
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    </script>
+
+
+
+
+
+
+</body></html>
