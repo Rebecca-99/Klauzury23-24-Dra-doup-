@@ -30,19 +30,19 @@
             <div class="slide-text" id="menici2">
                 <h1> Dračí Doupě</h1>
             </div>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
+            <div class="swiper mySwiper" style="margin-left: 5vw; margin-bottom:    15px">
+                <div class="swiper-wrapper" >
 
                     <div class="swiper-slide slide_1 firstswiper"><img src="fotky/fotka2.png"></div>
                     <div class="swiper-slide slide_2 firstswiper"><img src="fotky/fotka3.png"></div>
                     <div class="swiper-slide slide_3 firstswiper"><img src="fotky/fotka4.png"></div>
-                    <div class="swiper-slide slide_4 firstswiper"><img src="fotky/fotka5.png"></div>
+               
                     <div class="swiper-slide slide_5 firstswiper"><img src="fotky/fotka6.png"></div>
                     <div class="swiper-slide slide_6 firstswiper"><img src="fotky/fotka7.png"></div>
                     <div class="swiper-slide slide_7 firstswiper"><img src="fotky/fotka8.png"></div>
                     <div class="swiper-slide slide_8 firstswiper"><img src="fotky/fotka9.png"></div>
                     <div class="swiper-slide slide_9 firstswiper"><img src="fotky/fotka10.png"></div>
-                    <div class="swiper-slide slide_10 firstswiper"><img src="fotky/fotka11.png"></div>
+              
                     <div class="swiper-slide slide_11 firstswiper"><img src="fotky/fotka12.png"></div>
                     <div class="swiper-slide slide_12 firstswiper"><img src="fotky/fotka13.png"></div>
                     <div class="swiper-slide slide_13 firstswiper"><img src="fotky/fotka14.png"></div>
@@ -53,17 +53,23 @@
                     <div class="swiper-slide slide_18 firstswiper"><img src="fotky/fotka19.png"></div>
                     <div class="swiper-slide slide_19 firstswiper"><img src="fotky/fotka20.png"></div>
                 </div>
+                
+            <div class="swiper-pagination" style="color: whitesmoke"></div>
+
+  <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev" style=" color: whitesmoke;"></div>
+            <div class="swiper-button-next" style="color: whitesmoke; margin-right:5vw"></div>
 
             </div>
 
         </div>
-        <div id="slide_text_0" style="display:none;">
+        <div id="slide_text_0" style="display:none;" class="slide-text">
             <h1>Dračí doupě</h1>
         </div>
-        <div id="slide_text_1" style="display:none;">Text for Slide 2</div>
-        <div id="slide_text_2" style="display:none;">Text for Slide 3</div>
-        <div id="slide_text_3" style="display:none;">Text for Slide 4</div>
-        <div id="slide_text_6" style="display:none;">Text for Slide 5</div>
+        <div id="slide_text_1" style="display:none;" class="slide-text">Text for Slide 2</div>
+        <div id="slide_text_2" style="display:none;" class="slide-text">Text for Slide 3</div>
+        <div id="slide_text_3" style="display:none;" class="slide-text">Text for Slide 4</div>
+        <div id="slide_text_6" style="display:none;" class="slide-text">Text for Slide 5</div>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
             function see(param_div_id) {
@@ -125,110 +131,197 @@
         });
     </script>
 
-    <div id="container3">
-        <div class="gallery">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide gallery_slide">
-                        <a href="#img1"><img src="fotky/fotka1.png" data-text="Text for Image 1"></a>
-                        <a href="#img2"><img src="fotky/fotka2.png" data-text="Text for Image 2"></a>
-                        <a href="#img3"><img src="fotky/fotka3.png" data-text="Text for Image 3"></a>
-                        <a href="#img4"><img src="fotky/fotka4.png" data-text="Text for Image 4"></a>
-                        <a href="#img5"><img src="fotky/fotka21.png" data-text="Text for Image 5"></a>
-                        <a href="#img6"><img src="fotky/fotka6.png" data-text="Text for Image 6"></a>
-                        <a href="#img7"><img src="fotky/fotka7.png" data-text="Text for Image 7"></a>
-                        <a href="#img8"><img src="fotky/fotka8.png" data-text="Text for Image 8"></a>
-                        <a href="#img9"><img src="fotky/fotka9.png" data-text="Text for Image 9"></a>
-                        <a href="#img10"><img src="fotky/fotka10.png" data-text="Text for Image 10"></a>
-                        <a href="#img11"><img src="fotky/fotka20.png" data-text="Text for Image 11"></a>
-                        <a href="#img12"><img src="fotky/fotka12.png" data-text="Text for Image 12"></a>
+<div class="container3">
 
-                    </div>
+<h1 style="text-align:center">Galerie použitých fotek</h1>
 
-                </div>
+<div class="row">
+  <div class="column">
+    <img src="fotky/fotka1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="fotky/fotka2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="fotky/fotka3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="fotky/fotka4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="fotky/fotka13.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="fotky/fotka6.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="fotky/fotka7.png" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="fotky/fotka8.png" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="fotky/fotka9.png" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="fotky/fotka10.png" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="fotky/fotka14.png" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="fotky/fotka12.png" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+  </div>
+</div>
 
-            </div>
-        </div>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
 
-
-
-
-
-
-
-        <div class="lightbox" id="img1">
-            <a href="#"><img src="fotky/fotka1.png"></a>
-        </div>
-        <div class="lightbox" id="img2">
-            <a href="#"><img src="fotky/fotka2.png"></a>
-        </div>
-        <div class="lightbox" id="img3">
-            <a href="#"><img src="fotky/fotka3.png"></a>
-        </div>
-        <div class="lightbox" id="img4">
-            <a href="#"><img src="fotky/fotka4.png"></a>
-        </div>
-        <div class="lightbox" id="img5">
-            <a href="#"><img src="fotky/fotka2.png"></a>
-        </div>
-        <div class="lightbox" id="img6">
-            <a href="#"><img src="fotky/fotka6.png"></a>
-        </div>
-        <div class="lightbox" id="img7">
-            <a href="#"><img src="fotky/fotka7.png"></a>
-        </div>
-        <div class="lightbox" id="img8">
-            <a href="#"><img src="fotky/fotka8.png"></a>
-        </div>
-        <div class="lightbox" id="img9">
-            <a href="#"><img src="fotky/fotka9.png"></a>
-        </div>
-        <div class="lightbox" id="img10">
-            <a href="#"><img src="fotky/fotka10.png"></a>
-        </div>
-        <div class="lightbox" id="img11">
-            <a href="#"><img src="fotky/fotka20.png"></a>
-        </div>
-        <div class="lightbox" id="img12">
-            <a href="#"><img src="fotky/fotka12.png"></a>
-        </div>
-        <div class="lightbox" id="img13">
-            <a href="#"><img src="fotky/fotka13.png"></a>
-        </div>
-        <div class="lightbox" id="img14">
-            <a href="#"><img src="fotky/fotka14.png"></a>
-        </div>
-        <div class="lightbox" id="img15">
-            <a href="#"><img src="fotky/fotka15.png"></a>
-        </div>
-        <div class="lightbox" id="img16">
-            <a href="#"><img src="fotky/fotka16.png"></a>
-        </div>
-        <div class="lightbox" id="img17">
-            <a href="#"><img src="fotky/fotka17.png"></a>
-        </div>
-        <div class="lightbox" id="img19">
-            <a href="#"><img src="fotky/fotka19.png"></a>
-        </div>
-        <div class="lightbox" id="img20">
-            <a href="#"><img src="fotky/fotka11.png"></a>
-        </div>
-        <div class="lightbox" id="img21">
-            <a href="#"><img src="fotky/fotka5.png"></a>
-        </div>
-
-        <!-- Přidejte další lightbox divy podle potřeby -->
-
-        <script>
-            document.addEventListener('click', function(event) {
-                if (event.target.matches('.lightbox img') || event.target.matches('.lightbox .close')) {
-                    event.preventDefault();
-                    window.location.hash = '';
-                }
-            }, false);
-        </script>
+    <div class="mySlides">
+      <div class="numbertext">1 / 12</div>
+      <img src="fotky/fotka1.png" style="width:100%">
     </div>
 
+    <div class="mySlides">
+      <div class="numbertext">2 / 12</div>
+      <img src="fotky/fotka2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 12</div>
+      <img src="fotky/fotka3.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 12</div>
+      <img src="fotky/fotka4.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">5 / 12</div>
+      <img src="fotky/fotka13.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">6 / 12</div>
+      <img src="fotky/fotka6.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">7 / 12</div>
+      <img src="fotky/fotka7.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">8 / 12</div>
+      <img src="fotky/fotka8.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">9 / 12</div>
+      <img src="fotky/fotka9.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">10 / 12</div>
+      <img src="fotky/fotka10.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">11 / 12</div>
+      <img src="fotky/fotka14.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">12 / 12</div>
+      <img src="fotky/fotka12.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+ 
+
+    <div class="column2">
+      <img class="demo cursor" src="fotky/fotka1.png" style="width:100%" onclick="currentSlide(1)" alt="Image 1">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="fotky/fotka2.png" style="width:100%" onclick="currentSlide(2)" alt="Image 2">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="fotky/fotka3.png" style="width:100%" onclick="currentSlide(3)" alt="Image 3">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="fotky/fotka4.png" style="width:100%" onclick="currentSlide(4)" alt="Image 4">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="fotky/fotka13.png" style="width:100%" onclick="currentSlide(5)" alt="Image 5">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="fotky/fotka6.png" style="width:100%" onclick="currentSlide(6)" alt="Image 6">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="fotky/fotka7.png" style="width:100%" onclick="currentSlide(7)" alt="Image 7">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="fotky/fotka8.png" style="width:100%" onclick="currentSlide(8)" alt="Image 8">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="fotky/fotka9.png" style="width:100%" onclick="currentSlide(9)" alt="Image 9">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="fotky/fotka10.png" style="width:100%" onclick="currentSlide(10)" alt="Image 10">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="fotky/fotka14.png" style="width:100%" onclick="currentSlide(11)" alt="Image 11">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="fotky/fotka12.png" style="width:100%" onclick="currentSlide(12)" alt="Image 12">
+    </div>
+      
+  </div>
+</div>
+    
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         var isFixed = false;
