@@ -1,12 +1,15 @@
 html{
     scroll-behavior: smooth;
 }
-body {
-    margin: 0px;
-    padding: 0px;
-    height: 300vh;
 
-
+@media screen and (max-width: 768px) {
+    body {
+        transform: rotate(90deg);
+        transform-origin: left top;
+        margin: 0;
+        padding: 0;
+        height: 300vh;
+    }
 }
 
 h1{
